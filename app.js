@@ -1,4 +1,11 @@
-// Topic : enum + loop                            MAY 18 , 24
+// Topic any , unknown , explicit typecasting , rest parameter    May 25 , 24
+// and function overloading 
+function login(email, password) {
+    return 'welcome you are logged in!';
+}
+var user = login('usama@gmail.com', 'dshfjh');
+console.log(user);
+// Topic : enum + loop + any + unknown                      MAY 18 , 24
 // enum Color {
 //     Red,
 //     Green,
@@ -63,16 +70,32 @@
 // for(let i = 10; i > 0; i--) {
 //     console.log(i);
 // }
-var fruits = ['Apple', 'Mango', 'Banana'];
-for (var i = 0; i <= 2; i++) {
-    console.log(fruits[1]);
-}
+// let fruits = ['Apple','Mango','Banana'];
+// for(let i = 0; i <= 2; i++) {
+//     console.log(fruits[1]);
+// }
 // for(let i = 0; i <= 2; i++) {
 //     console.log(fruits[i]);
 // }
 // for(let i = 0; i < fruits.length; i++) {
 //     console.log(fruits[i]);
 // }
+// Home Work : while loop
+// type any
+// let age: any;       // kuch bhi
+// age = 1;            // ok
+// age = 'John';       // ok
+// age = true;         // ok
+// age = null          // ok
+// age.shfjdfhj;       // ok
+// type unknown
+// let age: unknown;      // pata nahi
+// age = 2;               // ok
+// age = 'Doe';           // ok
+// age = false;           // ok
+// age = null;            // ok
+// age.sfhdkhfj;          // not ok
+// Home Work : difference b/w any and unknown
 // Book: TypeScript Mastary a step-by-step learning experience
 // Variables
 // let favoriteColor = "red";
