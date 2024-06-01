@@ -1,9 +1,62 @@
-// Topic toFixed ,                                                June 1 , 24
-var a = 18.5;
-a.toFixed(2);
+// Topic toFixed , toUpperCase , toLowerCase , slice ,        June 1 , 24
+// current topic narrowing , typeof , Math.random , 
+// let a = 18.5;
+// a.toFixed(2);
+// console.log(a);
+// let num = a.toFixed(2);
+// console.log(num);
+// let a = '18.5';
+// a.toFixed(2);    // error b/c toFixed() method for number not for string
+// let a = 'Usama';
+// let b = a.toUpperCase();
+// console.log(b);
+// let b = a.toLowerCase();
+// console.log(b);
+// for title case
+// let titleCase = a[0].toUpperCase() + a.slice(1);
+// console.log(titleCase);
+// Narrowing
+// let a: string | number;
+// // a.            ( show common methods )
+// a = 10;          // Narrowing process. Original datatype is not change
+// a.toFixed(2);    // show number methods
+// a = 'Usama';     // no error b/c both data type is accepted
+// // a.toFixed(2); // throw error b/c this time a will be string and toFixed is number method
+// a.toUpperCase(); // show string methods
+// a = 10;          // Narrowing process
+// a.toUpperCase()   // throw error b/c toUpperCase() is string method
+// Narrwoing is basically for TypeScript
+// Home Work   ( Asynchronous JavaScript )
+// a = 10;
+// number
+// number
+// number
+// a = 'Usama';
+// string
+// string
+// string
+// typeof function
+// let num1 = 18;
+// console.log(typeof num1);     // number
+// let num1 = '18';
+// console.log(typeof num1);        // string
+// let num1 = true;
+//           'boolean' == 'boolean'         true
+// console.log(typeof num1 == 'boolean');    // true
+// let num1 = 18;
+//           'number' == 'boolean'       false
+// console.log(typeof num1 == 'boolean');    // false
+// let num1 = 18;
+//          'number' == 'number'        true
+// console.log(typeof num1 == 'number');     // true
+// (typeof num1 == 'number') this is type card
+// window + dot open emogis popup
+// Math.random()     ( generate random number range 0.00000... to 0.99999... )
+// console.log(Math.random());
+var random = Math.random();
+// console.log(random);
+var a = random > 0.6 ? 'Usama' : 16; // ternary operator most used operator
 console.log(a);
-var num = a.toFixed(2);
-console.log(num);
 // Topic any , unknown , explicit typecasting , rest parameter    May 25 , 24
 // and function overloading 
 // any
