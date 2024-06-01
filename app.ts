@@ -1,3 +1,21 @@
+// Topic toFixed ,                                                June 1 , 24
+
+// let a = 18.5;
+
+// a.toFixed(2);
+
+// console.log(a);
+
+// let num = a.toFixed(2);
+
+// console.log(num);
+
+
+let a = '18.5';
+
+
+
+
 // Topic any , unknown , explicit typecasting , rest parameter    May 25 , 24
 // and function overloading 
 
