@@ -1,5 +1,216 @@
+// Topic Synchoronous and Asynchoronous JavaScript ,         June 08 , 24
+//       setTimeout() , callBack function , Promise , await
+
+// Synchoronous JavaScript executes line by line and fast , no wait
+/*
+console.log("First");
+
+setTimeout( () => {
+    console.log("Second");
+    
+}, 3000);
+
+console.log("Third");
+*/
+
+// Asynchronous JavaScript executes parallel programming
+/*
+console.log("First");
+
+setTimeout( () => {
+    console.log("Second");
+    
+}, 0);
+
+console.log("Third");
+*/
+/*
+console.log("First");
+
+setTimeout( () => {
+    console.log("Second");
+    
+});
+
+console.log("Third");
+*/  
+
+/*
+function orderPizza() {
+    setTimeout( () => {
+        return "Order Placed";
+    }, 2000);
+}
+
+let result = orderPizza();
+
+console.log(result);          // undefined
+*/
+
+/*
+function orderPizza() {
+    setTimeout( () => {
+        console.log("Order Placed");
+        
+    }, 2000);
+}
+
+orderPizza();
+*/
+
+/*
+function orderPizza() {
+
+}
+
+console.log(orderPizza());        // undefined
+*/
+
+/*
+function preparePizza() {
+    setTimeout( () => {
+        console.log("Prepared Pizza!");
+        
+    }, 5000);
+}
+
+preparePizza();
+*/
+
+/*
+function orderPizza( preparePizzaCb: any ) {
+    setTimeout( () => {
+        console.log("Order Placed");
+        preparePizzaCb();
+        
+    }, 2000);    
+}
+
+orderPizza( preparePizza );
+
+function preparePizza() {
+    setTimeout( () => {
+        console.log("Prepared Pizza!");
+        
+    }, 5000);
+}
+*/
+
+/*
+type Fn = () => void;
+
+function orderPizza( preparePizzaCb: Fn ) {
+    setTimeout( () => {
+        console.log("Order Placed");
+        preparePizzaCb();
+        
+    }, 2000);    
+}
+
+orderPizza( preparePizza );
+
+function preparePizza() {
+    setTimeout( () => {
+        console.log("Prepared Pizza!");
+        
+    }, 5000);
+}
+*/
+
+
+// Call back hell  ( function inside function inside function inside... )
+//                   Pyramid of dooooom!
+
+
+// Pormise
+
+/*
+function checksMarks() {
+    return new Promise( (resolve, reject) => {
+        
+        let marks = 91;
+
+        setTimeout( () => {
+            if(marks >= 90) {
+                resolve("Party!!!");
+            }
+            else {
+                reject("Nalaik!!");
+            }
+        }, 5000)
+    })
+}
+
+checksMarks().then( () => {        // .then method is always used on promise
+    console.log("Party!!!!");
+    
+})
+.catch( () => {
+    console.log("No Party!!");
+    
+})
+*/
+
+// tsc --init , npm init -y
+
+/*
+function checksMarks() {
+    return new Promise( (resolve, reject) => {
+        
+        let marks = 89;
+
+        setTimeout( () => {
+            if(marks >= 90) {
+                resolve("Party!!");
+            }
+            else {
+                reject("Nalaik!!");
+            }
+        }, 5000)
+    })
+}
+
+checksMarks()
+.then( (msg) => {
+    console.log("Party!!!!");
+    console.log(msg, 'Message!');
+    
+})
+.catch( (err) => {
+    console.log("No Party!!!!");
+    console.log(err, 'Error!');
+    
+})
+*/
+
+/*
+function checksMarks() {
+    return new Promise( (resolve, reject) => {
+        
+        let marks = 91;
+
+        setTimeout( () => {
+            if(marks >= 90) {
+                resolve("Party!!");
+            }
+            else {
+                reject("Nalaik!!");
+            }
+        }, 5000)
+    })
+}
+
+// await is always connect to promise
+
+const returnValue = await checksMarks();  
+console.log(returnValue);
+*/
+
+
+
 // Topic toFixed , toUpperCase , toLowerCase , slice ,        June 1 , 24
 // current topic narrowing , typeof , Math.random , 
+// interface , Structural Typeing , stale objects and fresh objects
 
 // let a = 18.5;
 
@@ -119,17 +330,164 @@
 
 // console.log(Math.random());
 
-let random = Math.random();
+// let random = Math.random();
 
 // console.log(random);
 
-let a = random > 0.6 ? 'Usama' : 16;   // ternary operator most used operator
+// let a = random > 0.6 ? 'Usama' : 16;   // ternary operator most used operator
 
-console.log(a);
+// console.log(a);
+
+// console.log(`My random no is ${a}`);       // template literals
+
+// a ( data type is union , string or number )
+
+// if( typeof a == 'string' ) {                 // (typeof a == 'string') Typecard
+//     console.log('Narrowing to string!');
+    
+// }
+// else {
+//     console.log('Narrowing to number!');
+    
+// }
+
+// let random = Math.random();
+
+// let a = random > 0.6 ? 'Usama' : random > 0.8 ? 'Hamza' : 16
+
+// console.log(a);
 
 
+// null 
+
+// let age: null | number = null;           // put intensionally null
+
+// let salary: null | number = null;
 
 
+// Structural Typing     step 05c
+
+// interface         ( use to make object type )
+
+// interface User {               // interface syntax
+//     name: string,
+//     age: number,
+//     address: {
+//         city: string,
+//         state: string
+//     }
+// }
+
+
+// type User = {              // type alias syntax
+//     name: string,
+//     age: number,
+//     address: {
+//         city: string,
+//         state: string
+//     }
+// }
+
+
+// difference between interface and type alias
+
+// interface type for usually using to objects and some time to function
+
+// type alias make type for multiple data type 
+
+
+// interface Address {
+//     city: string,
+//     state: string
+// }
+
+// interface User {
+//     name: string,
+//     age: number,
+//     address: Address
+// }
+
+// let User1: User = {
+//     name: 'Usama',
+//     age: 20,
+//     address: {
+//         city: 'Karchi',
+//         state: 'Sindh'
+//     }
+// }
+
+// make interface I choose car
+
+// interface Brand {
+//     name: string,
+//     register: boolean
+// }
+
+// interface Model {
+//     name: string,
+//     year: number
+// }
+
+// interface Car {
+//     color: string,
+//     brand: Brand,
+//     model: Model
+// }
+
+// let myCar: Car = {
+//     color: 'White',
+//     brand: {
+//         name: 'Volvo',
+//         register: true
+//     },
+//     model: {
+//         name: 'XC60',
+//         year: 2020
+//     }
+// }
+
+
+// Structural Typing
+
+// interface Deal1 {
+//     food: string
+// }
+
+// interface Deal2 {
+//     food: string,
+//     drink: string
+// }
+
+// let usamaOrder: Deal1 = {
+//     food: 'biryani'
+// }
+
+// let aliOrder: Deal2 = {
+//     food: 'biryani',
+//     drink: 'ishting'
+// }
+
+// structural typing
+
+// let usamaTable: Deal1 = aliOrder;    // no error b/c extra properties are allowed
+
+// let aliTable: Deal2 = usamaOrder  // error b/c missing properties are not allowed
+
+// here you drink make an optional
+
+
+// stale objects vs fresh objects      // stale means baasi
+
+// let usamaTable: Deal1 = aliOrder;    // here is stale object use 
+
+// let aliTable: Deal2 = {          // here is fresh object use
+//     food: 'biryani',
+//     drink: 'ishting',
+    // salet: true         // extra properties are not allowed in fresh objects
+// }
+
+// extra properties are allowed in stale objects
+// extra properties are not allowed in fresh objects
 
 
 
