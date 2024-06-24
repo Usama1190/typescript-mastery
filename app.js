@@ -1,3 +1,148 @@
+// Topic : Object Oriented Programming ( OOP )               June 22 , 24
+var __extends = (this && this.__extends) || (function () {
+    var extendStatics = function (d, b) {
+        extendStatics = Object.setPrototypeOf ||
+            ({ __proto__: [] } instanceof Array && function (d, b) { d.__proto__ = b; }) ||
+            function (d, b) { for (var p in b) if (Object.prototype.hasOwnProperty.call(b, p)) d[p] = b[p]; };
+        return extendStatics(d, b);
+    };
+    return function (d, b) {
+        if (typeof b !== "function" && b !== null)
+            throw new TypeError("Class extends value " + String(b) + " is not a constructor or null");
+        extendStatics(d, b);
+        function __() { this.constructor = d; }
+        d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
+    };
+})();
+// Object based programming , clean efficient code
+// 1. Objects         2. Class  ( blue print )
+/*
+class House {
+    ownerName: string = 'Usama';
+    address: string = 'A123';
+    numberOfDoors: number = 2;
+}
+
+let h1 = new House();                 // Promise => class
+ 
+console.log(h1);
+console.log(h1.address);
+console.log(h1['address']);
+
+
+let h2 = new House();
+let h3 = new House();
+*/
+/*
+class House {
+    ownerName: string = 'usama';
+    address:string = 'A123';
+
+    constructor() {}
+}
+*/
+/*
+class House {
+    ownerName: string;
+    // address:string;
+
+    constructor(name: string) {
+        this.ownerName = name;
+    }
+}
+
+let h1 = new House('usama');
+
+console.log(h1);
+*/
+/*
+class House {
+    ownerName: string;
+    address:string;
+
+    constructor(name: string, ads: string) {
+        this.ownerName = name;
+        this.address = ads;
+    }
+}
+
+let h1 = new House('usama', 'A345');
+
+console.log(h1);
+*/
+// prototypes home work
+/*
+class House {
+    ownerName: string;
+    readonly address:string;
+
+    constructor(name: string, ads: string) {
+        this.ownerName = name;
+        this.address = ads;
+    }
+}
+
+let h1 = new House('usama', 'A123');
+
+console.log(h1);
+*/
+// Objects have two main things properties and methods
+/*
+class House {
+    ownerName: string;
+    readonly address:string;
+    bell() {
+        console.log('Ding Dong');
+        
+    }
+
+    constructor(name: string, ads: string) {
+        this.ownerName = name;
+        this.address = ads;
+    }
+}
+
+let h1 = new House('usama', 'A123');
+h1.bell();
+
+console.log(h1);
+*/
+// Four principals or rules in OOP 
+// 1. Encapsulation      2. Polymorphism         3. Inheritance
+// 4. Abstraction
+var Animal = /** @class */ (function () {
+    function Animal(name) {
+        this.name = name;
+    }
+    Animal.prototype.eat = function () {
+        console.log('Eaten!');
+    };
+    return Animal;
+}());
+/*
+class Cat extends Animal{
+    meow() {
+        console.log('Meow meow!!');
+        
+    }
+}
+*/
+var Cat = /** @class */ (function (_super) {
+    __extends(Cat, _super);
+    function Cat(name, color) {
+        var _this = _super.call(this, name) || this;
+        _this.eyeColor = color;
+        return _this;
+    }
+    return Cat;
+}(Animal));
+var myCat1 = new Cat('Bublo', 'pink');
+myCat1.eat();
+// myCat1.meow();
+console.log(myCat1);
+// class ko used karte hue object or instance banao
+// let h2 = new Cat('Tuk tuk');
+// console.log(h2);
 // Topic Synchoronous and Asynchoronous JavaScript ,         June 08 , 24
 //       setTimeout() , callBack function , Promise , await
 // Synchoronous JavaScript executes line by line and fast , no wait
@@ -167,21 +312,28 @@ checksMarks()
     
 })
 */
+/*
 function checksMarks() {
-    return new Promise(function (resolve, reject) {
-        var marks = 91;
-        setTimeout(function () {
-            if (marks >= 90) {
+    return new Promise( (resolve, reject) => {
+        
+        let marks = 91;
+
+        setTimeout( () => {
+            if(marks >= 90) {
                 resolve("Party!!");
             }
             else {
                 reject("Nalaik!!");
             }
-        }, 5000);
-    });
+        }, 5000)
+    })
 }
-var myVar = await checksMarks(); // await is always connect to promise
-console.log(myVar);
+
+// await is always connect to promise
+
+const returnValue = await checksMarks();
+console.log(returnValue);
+*/
 // Topic toFixed , toUpperCase , toLowerCase , slice ,        June 1 , 24
 // current topic narrowing , typeof , Math.random , 
 // interface , Structural Typeing , stale objects and fresh objects
