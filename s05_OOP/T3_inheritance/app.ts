@@ -62,7 +62,7 @@ class Cat extends Animal{
 
 // Topic : Object Oriented Programming               June 29 , 2024
 
-
+/*
 class Animal {
     name: string;
 
@@ -78,6 +78,7 @@ class Animal {
 
 let ani1 = new Animal('Tun tun!');
 let ani2 = new Animal('Mun mun!');
+*/
 
 // console.log(ani1);
 // console.log(ani1.name);
@@ -92,19 +93,21 @@ let ani2 = new Animal('Mun mun!');
 
 // Inheritance => extends
 
-// class Cat extends Animal {
-//     color: string;
+/*
+class Cat extends Animal {
+    color: string;
 
-//     constructor(name: string, color: string) {
-//         super('name');
+    constructor(name: string, color: string) {
+        super('name');
 
-//         this.color = color;
-//     }
-// }
+        this.color = color;
+    }
+}
 
-// let cat1 = new Cat('Bilo', 'red');
+let cat1 = new Cat('Bilo', 'red');
 
-// cat1.makeSound();
+cat1.makeSound();
+*/
 
 /*
 class Cat extends Animal {
@@ -153,6 +156,7 @@ dog1.makeSound();
 */
 
 
+/*
 class Parent {
     parentName: string = 'Israr';
     secret: string = 'israr1190';
@@ -172,7 +176,136 @@ class Children extends Parent{
 let childOne = new Children('Hanzala');
 
 console.log(childOne);
-
+*/
 
 
 // Encapsulation => Access modifier public , private and protected
+
+/*
+class Parent {
+    public parentName: string = 'Israr';
+    private secret: string = 'israr1190';
+    protected cardPinCode: number = 1190;
+}
+
+class Children extends Parent{
+    childName: string = 'Osama';
+
+    constructor(childName: string) {
+        super();
+
+        this.childName = childName;
+    }
+}
+
+let childOne = new Children('Saeed');
+
+console.log(childOne);
+*/
+
+/*
+class Parent {
+    public parentName: string = 'Israr';
+    private secret: string = 'israr1190';
+    protected cardPinCode: number = 1190;
+
+    // getSecret() {                      // Accessable
+    //     console.log(this.secret);
+        
+    // }
+}
+
+class Children extends Parent{
+    childName: string = 'Osama';
+
+    constructor(childName: string) {
+        super();
+
+        this.childName = childName;
+    }
+
+    getInfo() {
+        console.log(this.childName);
+        
+    }
+}
+
+let childOne = new Children('Saeed');
+
+childOne.getInfo();       // Not allowed to access secret
+*/
+
+
+// Abstraction 
+
+/*
+interface IDraw {
+    draw: () => void        // Only Declaration
+}
+
+class Circle implements IDraw {
+    draw() {
+        console.log('Drawing!');
+        
+    }
+}
+
+let myCircle = new Circle();
+
+myCircle.draw();
+
+
+class Triangle implements IDraw {
+    draw() {
+        console.log('Drawing triangle!');
+        
+    }
+}
+
+let myTriangle = new Triangle()
+
+myTriangle.draw();
+*/
+
+/*
+interface IDraw {       // Interface type banane ke liye used hota h
+    draw: () => void;
+    color: () => void;
+}
+
+class Circle implements IDraw {
+    draw() {
+        console.log('Drawing circle!');
+        
+    }
+
+    color() {
+        console.log('Blue!');
+        
+    }
+}
+
+let myCircle = new Circle();
+
+myCircle.draw();
+myCircle.color();
+*/
+
+/*
+class Triangle implements IDraw {
+    draw() {
+        console.log('Drawing triangle!');
+        
+    }
+
+    color() {
+        console.log('purple!');
+        
+    }
+}
+
+let myTriangle = new Triangle();
+
+myTriangle.draw();
+myTriangle.color();
+*/
