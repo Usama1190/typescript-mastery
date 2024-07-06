@@ -309,3 +309,6 @@ let myTriangle = new Triangle();
 myTriangle.draw();
 myTriangle.color();
 */
+
+
+// In this case interface 'guidline' and class 'blue print'
