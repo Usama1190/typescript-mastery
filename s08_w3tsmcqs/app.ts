@@ -22,7 +22,9 @@
 // q3: True or False: TypeScript can always correctly infer a variables
 //      type.
 
-// a. True  🟢                  b. False
+// TypeScript ہمیشہ متغیر کی قسم کا صحیح اندازہ لگا سکتا ہے۔
+
+// a. True  ❌                  b. False  🟢
 
 
 
@@ -87,7 +89,9 @@
 // q9: True or False: TypeScript will always correctly infer the type 
 //      of an array.
 
-// a. true 🟢               b. false
+// TypeScript ہمیشہ ایک صف کی قسم کا صحیح اندازہ لگائے گا۔
+
+// a. True ❌                 b. False  🟢
 
 
 
@@ -96,7 +100,7 @@
 // q10 : True or False: a Tuple and an Array are the same thing when 
 //          discussing types
 
-// a. True                     b. False  🟢
+//  a. False  🟢              b. True
 
 
 
@@ -115,7 +119,7 @@
 
 // q12: Type Aliases are mostly used with ______.
 
-// a. Strings           b. Booleans  🟢            c. Numbers
+// a. Strings 🟢          b. Booleans  ❌             c. Numbers
 
 
 
@@ -159,7 +163,7 @@
 // q17: True or False: 'keyof' can be used with index signatures to 
 //        extract the index type.
 
-// a. True                      b. False   🟢
+// a. True  🟢                    b. False   ❌
 
 
 
@@ -167,7 +171,7 @@
 
 // q18: True or False: Generics can not be assigned default values
 
-// a. False                 b. True  🟢
+// a. False 🟢                b. True  ❌
 
 
 
@@ -207,8 +211,8 @@
 
 // q22: Access modifiers control the ______ of properties and methods.
 
-// a. type  🟢                     b. mocking
-// c. visiblity                  d. inheritance
+// a. type  ❌                     b. mocking
+// c. visiblity 🟢                 d. inheritance
 
 
 
@@ -217,7 +221,7 @@
 // q23: True or False: public modifiers allow access to the class 
 //            members from anywhere.
 
-// a. False                b. True  
+// a. False                b. True  🟢
 
 
 
@@ -226,7 +230,7 @@
 // q24: True or False: protected modifiers only are allowed in the 
 //         inherited class.
 
-// a True  🟢                          b. False
+// a True  ❌                          b. False  🟢
 
 
 
