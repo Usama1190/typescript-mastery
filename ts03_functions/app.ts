@@ -128,3 +128,58 @@ halfFryEgg(2, 1, 2.5, 5);
 
 
 // What happens if I call function twice
+
+
+
+// Arrow Functions
+/*
+let halfFryEgg = () => 1 + 1.5 + 3;
+//                    Egg + Butter + Salt
+
+let responce: number = halfFryEgg();
+console.log(responce);
+*/
+
+
+/*
+let halfFryEgg = (egg: number, butter: number, salt: number): number => (
+    egg + butter + salt
+);
+
+let responce: number = halfFryEgg(1, 1.5, 2);
+console.log(responce);
+*/
+
+
+
+/*
+let halfFryEgg = () => { return 1 + 1.5 + 2 };
+//                            Egg + butter + salt
+
+let responce: number = halfFryEgg();
+console.log(responce);
+*/
+
+
+/*
+let halfFryEgg = () => {
+    //          egg + butter + salt
+    let cocked = 1 + 1.5 + 2;
+
+    return cocked;
+}
+
+let responce: number = halfFryEgg();
+console.log(responce);
+*/
+
+
+
+let halfFryEgg = (egg: number, butter: number, salt: number): number => {
+    let cocked = egg + butter + salt;
+
+    return cocked;
+}
+
+let responce: number = halfFryEgg(1, 1.5, 4);
+console.log(responce);
