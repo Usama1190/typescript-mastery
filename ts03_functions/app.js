@@ -9,12 +9,6 @@ function halfFryEgg() {
 
 halfFryEgg();      // Invoking the function
 */
-
-
-
-
-
-
 // Returning function values
 /*
 function halfFryEgg(): number {
@@ -26,12 +20,6 @@ function halfFryEgg(): number {
 let responce: number = halfFryEgg();
 console.log(responce);
 */
-
-
-
-
-
-
 // Parameters and Arguments
 /*
 function halfFryEgg(egg: number, butter: number, salt: number): number {
@@ -41,11 +29,6 @@ function halfFryEgg(egg: number, butter: number, salt: number): number {
 let responce: number = halfFryEgg(1, 1.5, 2);
 console.log(responce);
 */
-
-
-
-
-
 /*
 function addNumbers(a: number, b: number) {
     return a + b;
@@ -54,11 +37,6 @@ function addNumbers(a: number, b: number) {
 let responce: number = addNumbers(12, 23);   // Invoking the numbers
 console.log(responce);
 */
-
-
-
-
-
 /*
 function calculateArea(width: number, height: number): number {
     return width * height;
@@ -67,12 +45,6 @@ function calculateArea(width: number, height: number): number {
 let responce = calculateArea(50, 50);     // Invoking the function
 console.log(responce);
 */
-
-
-
-
-
-
 // Default Parameters
 /*
 function halfFryEgg(egg: number = 1, butter: number = 1.5, salt: number = 2): number {
@@ -82,7 +54,6 @@ function halfFryEgg(egg: number = 1, butter: number = 1.5, salt: number = 2): nu
 let responce: number = halfFryEgg();
 console.log(responce);
 */
-
 /*
 function halfFryEgg(egg: number = 1, butter: number = 1.5, salt: number = 2): number {
     return egg + butter + salt;
@@ -91,11 +62,6 @@ function halfFryEgg(egg: number = 1, butter: number = 1.5, salt: number = 2): nu
 let responce: number = halfFryEgg(2, 2.5, 3);
 console.log(responce);
 */
-
-
-
-
-
 // Rest Parameters
 /*
 function halfFryEgg(egg: number, ...ingredients: number[]) {
@@ -106,25 +72,10 @@ function halfFryEgg(egg: number, ...ingredients: number[]) {
 
 halfFryEgg(1, 1.5, 2, 5);
 */
-
-
-
-
-
-
 // Spread Operators
-/*
-function halfFryEgg(egg: number, ...ingredients: number[]) {
+function halfFryEgg(egg, ...ingredients) {
     console.log(egg);
     console.log(...ingredients);
 }
-
 halfFryEgg(2, 1, 2.5, 5);
-*/
-
-
-
-
-
-
-// What happens if I call function twice
+export {};
