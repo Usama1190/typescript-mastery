@@ -78,6 +78,7 @@ console.log(`You should have some ${snack}.`);
 
 
 // Switch Statements
+/*
 let dayoff = 'Sunday';
 
 switch(dayoff) {
@@ -93,3 +94,68 @@ switch(dayoff) {
         console.log('Work on a hobby.');
     
 }
+*/
+
+
+
+
+
+// Self check quiz
+// A simple quiz that evaluates answers using if-else statements:
+/*
+let answer: string = 'correct';
+
+if(answer === 'correct') {
+    console.log('You got it right!');
+    
+}
+else {
+    console.log("Sorry, that's not correct.");
+    
+}
+*/
+
+
+
+
+
+// Evaluating a number game
+// A simple game where a user gausses if a number a high, low or eqaul to 
+// a target number.
+
+/*
+let guess: number = 7;
+let target: number = 5;
+
+if(guess < target) {
+    console.log('You guess too low.');
+    
+}
+else if(guess > target) {
+    console.log('You guess too high.');
+    
+}
+else {
+    console.log('You guessed correctly!');
+    
+}
+*/
+
+
+
+
+
+// Frient Checker Game
+// A game to check if someone is a friend based on their name
+/*
+let isFriend: string = 'Usama';
+
+if(isFriend === 'Usama') {
+    console.log(`${isFriend} is your friend.`);
+    
+}
+else {
+    console.log(`${isFriend} is not your friend.`);
+    
+}
+*/
