@@ -159,3 +159,17 @@ else {
     
 }
 */
+
+
+
+
+// Rock paper scissor game
+// A simple implementation of the Rock, Paper, Scissor Game
+
+let player1: string = 'Rock';
+let player2: string = 'Scissors';
+
+if(player1 === player2) {
+    console.log("It's a tie!");
+    
+}
