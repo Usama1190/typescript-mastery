@@ -110,10 +110,28 @@ else {
 */
 // Frient Checker Game
 // A game to check if someone is a friend based on their name
-let isFriend = 'Usama';
-if (isFriend === 'Usama') {
+/*
+let isFriend: string = 'Usama';
+
+if(isFriend === 'Usama') {
     console.log(`${isFriend} is your friend.`);
+    
 }
 else {
     console.log(`${isFriend} is not your friend.`);
+    
+}
+*/
+// Rock paper scissor game
+// A simple implementation of the Rock, Paper, Scissor Game
+let player1 = 'Rock';
+let player2 = 'Scissors';
+if (player1 === player2) {
+    console.log("It's a tie!");
+}
+else if (player1 === 'Rock' && player2 === 'Scissors' || player1 === 'Scissors' && player2 === 'Paper' || player1 === 'Paper' && player2 === 'Rock') {
+    console.log('Player 1 wins!');
+}
+else {
+    console.log('Player 2 wins!');
 }
