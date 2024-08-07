@@ -1,6 +1,4 @@
 // TypeScript Anonymous Functions
-
-
 // Anonymous Function
 /*
 let halfFryEgg = function() {
@@ -12,11 +10,6 @@ let halfFryEgg = function() {
 
 halfFryEgg();
 */
-
-
-
-
-
 // Immediately Invoked Function Expression (IIFE)
 /*
 (function() {
@@ -24,12 +17,6 @@ halfFryEgg();
     
 })();
 */
-
-
-
-
-
-
 // Recursive Functions
 /*
 function countDown(number: number): void {
@@ -45,10 +32,6 @@ function countDown(number: number): void {
 
 countDown(5);
 */
-
-
-
-
 /*
 function factorial(n: number): number {
     if(n === 0) {
@@ -61,29 +44,12 @@ function factorial(n: number): number {
 let result: number = factorial(5);
 console.log(result);
 */
-
-
-
-
-
-
 // Nested Functions
-/*
 function outerFunction() {
     function innerFunction() {
-        console.log('Hello from inside!');
-        
+        console.log('Hello from inside.');
     }
-
     innerFunction();
 }
-
 outerFunction();
-*/
-
-
-
-
-
-
-// Function Calbacks
+export {};
