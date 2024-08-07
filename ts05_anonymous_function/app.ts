@@ -87,3 +87,64 @@ outerFunction();
 
 
 // Function Calbacks
+/*
+function usama(cb: any) {
+    let name: string = 'Usama';
+
+    cb(name);
+}
+
+usama(function(name: string) {
+    console.log(`My name is ${name}.`);
+    
+})
+*/
+
+
+/*
+function processUserInput(callback: any) {
+    let name: string = 'Usama';
+
+    callback(name);
+}
+
+processUserInput(function(name: string) {
+    console.log(`Hello, ${name}.`);
+    
+})
+*/
+
+
+
+
+/*
+function processUserInput(callback: (name: string) => void) {
+    let name: string = 'Usama';
+
+    callback(name);
+}
+
+processUserInput(function(name: string) {
+    console.log(`Hello, ${name}.`);
+    
+});
+*/
+
+
+
+
+
+// Set Timeout Order
+/*
+setTimeout(() => {
+    console.log('Cake is ready!');
+    
+}, 2000);    // wait 2 seconds
+*/
+
+
+
+
+
+// Self Check Quizes
+// Consider creating a function that quizzes the user and checks the answer

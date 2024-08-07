@@ -1,5 +1,5 @@
 {
-  "name": "ts03_cli_addition_calculator",
+  "name": "a07_cli_quiz_check",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
@@ -10,8 +10,7 @@
   "keywords": [],
   "author": "",
   "license": "ISC",
-  "dependencies": {
-    "@types/inquirer": "9.0.3 -D",
-    "inquirer": "^10.1.6"
+  "devDependencies": {
+    "@types/inquirer": "^9.0.3"
   }
 }

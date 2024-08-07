@@ -45,11 +45,57 @@ let result: number = factorial(5);
 console.log(result);
 */
 // Nested Functions
+/*
 function outerFunction() {
     function innerFunction() {
-        console.log('Hello from inside.');
+        console.log('Hello from inside!');
+        
     }
+
     innerFunction();
 }
+
 outerFunction();
+*/
+// Function Calbacks
+/*
+function usama(cb: any) {
+    let name: string = 'Usama';
+
+    cb(name);
+}
+
+usama(function(name: string) {
+    console.log(`My name is ${name}.`);
+    
+})
+*/
+/*
+function processUserInput(callback: any) {
+    let name: string = 'Usama';
+
+    callback(name);
+}
+
+processUserInput(function(name: string) {
+    console.log(`Hello, ${name}.`);
+    
+})
+*/
+/*
+function processUserInput(callback: (name: string) => void) {
+    let name: string = 'Usama';
+
+    callback(name);
+}
+
+processUserInput(function(name: string) {
+    console.log(`Hello, ${name}.`);
+    
+});
+*/
+// Set Timeout Order
+setTimeout(() => {
+    console.log('Cake ready!');
+}, 2000);
 export {};
