@@ -17,3 +17,8 @@ function showExample() {
 // Hoisting
 // Hoisting with let and const
 // https://www.freecodecamp.org/news/javascript-let-and-const-hoisting
+console.log(number);
+// undefined
+var number = 12;
+console.log(number);
+// 12
