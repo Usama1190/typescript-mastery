@@ -1,0 +1,13 @@
+{
+  "name": "ts07_arrays_and_their_props",
+  "version": "1.0.0",
+  "description": "TypeScript Arrays and Their Properties",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
