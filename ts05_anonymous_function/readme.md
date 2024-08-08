@@ -9,3 +9,6 @@ topic:
 4. Nested Functions
 5. Function Callbacks
 6. Set Timeout Order
+
+
+Go to assignments folder and moved on step a08_questions

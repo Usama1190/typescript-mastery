@@ -1,7 +1,5 @@
-"use strict";
-Object.defineProperty(exports, "__esModule", { value: true });
-var inquirer_1 = require("inquirer");
-var input1 = await inquirer_1.default.prompt([{
+import inquirer from "inquirer";
+let input1 = await inquirer.prompt([{
         name: 'userAns',
         type: 'string',
         message: 'What is the capital of France?'
