@@ -105,3 +105,57 @@ function factorial(n: number): number {
 const result = factorial(5);
 console.log(result);
 */
+
+
+
+
+
+// 7. Nested Functions - Scoping
+/*
+function outerFunc(value: number) {
+    let firstStep: number = ++value;
+
+    function innerFunc(firstStep: number) {
+        let secondStep = firstStep * 3;
+
+        return secondStep;
+    }
+
+    return innerFunc(firstStep);
+}
+
+let returnValue = outerFunc(1);
+console.log(returnValue);
+*/
+
+
+
+
+
+// 8. Anonymous Function and Callbacks
+/*
+function anonymousFunc(numbers: number[], cb: any) {
+    let array2 = numbers.map(cb);
+    cb();
+    return array2;
+}
+
+let myVar = anonymousFunc([3, 5, 7], (x: number) =>  x * 2 );
+console.log(myVar);
+*/
+
+
+
+
+
+
+// 9. Set Timeout Exercise
+/*
+function hiUsama(cb: any) {
+    setTimeout(() => {
+        cb();
+    }, 2000);
+}
+
+hiUsama(() => console.log('Data Retrieved'));
+*/

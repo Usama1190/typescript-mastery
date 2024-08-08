@@ -67,12 +67,50 @@ const triple = multiplier(12);
 console.log(triple(2));
 */
 // 6. Recursive Function - Factorial
-function factorial(n) {
-    if (n <= 0) {
+/*
+function factorial(n: number): number {
+    if( n <= 0) {
         return 1;
     }
-    return n * factorial(n - 1);
+    return n * factorial(n - 1)
 }
+
 const result = factorial(5);
 console.log(result);
+*/
+// 7. Nested Functions - Scoping
+/*
+function outerFunc(value: number) {
+    let firstStep: number = ++value;
+
+    function innerFunc(firstStep: number) {
+        let secondStep = firstStep * 3;
+
+        return secondStep;
+    }
+
+    return innerFunc(firstStep);
+}
+
+let returnValue = outerFunc(1);
+console.log(returnValue);
+*/
+// 8. Anonymous Function and Callbacks
+/*
+function anonymousFunc(numbers: number[], cb: any) {
+    let array2 = numbers.map(cb);
+    cb();
+    return array2;
+}
+
+let myVar = anonymousFunc([3, 5, 7], (x: number) =>  x * 2 );
+console.log(myVar);
+*/
+// 9. Set Timeout Exercise
+function hiUsama(cb) {
+    setTimeout(() => {
+        cb();
+    }, 2000);
+}
+hiUsama(() => console.log('Data Retrieved'));
 export {};
