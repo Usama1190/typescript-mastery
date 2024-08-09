@@ -18,14 +18,11 @@ let multiDiArray = [
     [7, 8, 9]
 ];
 function findDiagnol(a) {
-    let count = 0;
+    const myArr = [];
     for (let i = 0; i < a.length; i++) {
-        for (let j = 0; j < a.length; j++) {
-            const element = a[i][j + count];
-            console.log(element);
-        }
+        myArr.push(a[i][i]);
     }
-    ++count;
+    console.log(myArr);
 }
 findDiagnol(multiDiArray);
 export {};

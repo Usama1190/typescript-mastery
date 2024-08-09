@@ -21,7 +21,7 @@ console.log(fruits);
 
 
 // 2. Working with Multidimentional Array
-
+/*
 let multiDiArray: number[][] = [
     [1, 2, 3],
     [4, 5, 6],
@@ -29,20 +29,17 @@ let multiDiArray: number[][] = [
 ];
 
 function findDiagnol(a: number[][]) {
-    let count = 0;
+    const myArr = [];
     for (let i = 0; i < a.length; i++) {
-        for (let j = 0; j < a.length; j++) {
-            const element = a[i][j + count];
-            console.log(element);
-            
-            
-        }
+        myArr.push(a[i][i]);
     }
-    ++count;
+
+    console.log(myArr);
+    
 }
 
 findDiagnol(multiDiArray);
-
+*/
 
 /*
 function sumArr(a: number[][]) {
