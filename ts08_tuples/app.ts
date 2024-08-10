@@ -101,3 +101,37 @@ while (minutesUntilBusArrives > 0) {
 
 
 // TypeScript For Loop
+/*
+for (let i = 0; i < 5; i++) {
+    console.log(`Watering plant ${i + 1}`);
+    
+}
+*/
+
+
+
+
+// For-In Loop
+/*
+let person: any = { name: 'Alice', age: 30, city: 'Wonderland' };
+
+for(let key in person) {
+    console.log(`${key}: ${person[key]}`);
+    
+}
+*/
+
+
+
+
+
+
+// For-Of Loop
+/*
+let flavors: string[] = ['Vanilla', 'Chocolate', 'Staubrary', 'Mint'];
+
+for(let flavor of flavors) {
+    console.log(flavor);
+    
+}
+*/

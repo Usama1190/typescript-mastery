@@ -38,3 +38,25 @@ do while loop syntax
 
 
 TypeScript For Loop
+
+
+
+topic
+for loop syntax
+
+
+
+For-In Loop
+
+
+topic
+for in loop syntax
+
+
+
+
+For-Of Loop
+
+
+topic
+for of loop syntax
