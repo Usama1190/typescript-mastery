@@ -36,3 +36,17 @@ Given an array of objects where each object represents a book with properties ti
 - Search for books by a specific author
 
 Define the array of books object and implement the functions.
+
+
+
+
+
+
+4. Using Array Methods
+Create an array of numbers. Using array methods, perform the following tasks
+
+- Create a new array with the squares of each numbers.
+- Filter out all numbers greater than 50.
+- Use the reduce method to find the sum of all numbers in the array
+
+Example usage of array methods for manipulation.

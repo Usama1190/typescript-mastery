@@ -57,7 +57,7 @@ console.log(returnValue);
 
 
 // 3. Filter and Searching in Arrays of Object
-
+/*
 interface Book {
     title: string;
     author: string;
@@ -85,10 +85,50 @@ const library: Book[] = [
     { title: 'vbfds', author: 'C Viki', yearPublished: 2007 },
 ];
 
-function filterArrar(author: string) {
+function filterYear(year: number) {
+    let newLibrary: any;
+    
+    for (let i = 0; i < library.length; i++) {
+        const element: any = library[i];
+        
+        if(element.yearPublished === year) {
+            newLibrary = library.slice(i);
+        }
+    }
+    console.log(newLibrary);
+    
+}
+
+filterYear(2000);
+*/
+
+/*
+function searchFilterArrar(author: string) {
     return library.filter(book => book.author === author);
 }
 
-const returnValue = filterArrar('Danny');
+const returnValue = searchFilterArrar('Danny');
+*/
+// console.log(returnValue);
 
+
+
+
+
+
+// 4. Using Array Methods
+
+const myNums: number[] = [1, 23, 65, 12, 254, 67, 77, 8, 52, 100, 111, 42, 123, 84, 45];
+
+function squareArr(arr: number[]): number[] {
+    let sqrNums: number[] = [];
+    for (let i = 0; i < arr.length; i++) {
+        const element = arr[i] * arr[i];
+        sqrNums.push(element);
+    }
+
+    return sqrNums;
+}
+
+let returnValue = squareArr(myNums);
 console.log(returnValue);

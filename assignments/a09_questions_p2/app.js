@@ -1,5 +1,55 @@
 // TypeScript Home Work Assignments
-const library = [
+// 1. Basic Array Operations
+/*
+let fruits: string[] = ["Apple", "Orange", "Banana", "Mango"];
+
+fruits.push('Watermalon');
+fruits.shift();
+fruits.unshift('PineApple');
+
+fruits.splice(2, 1);
+
+console.log(fruits);
+*/
+// 2. Working with Multidimentional Array
+/*
+let multiDiArray: number[][] = [
+    [1, 2, 3],
+    [4, 5, 6],
+    [7, 8, 9]
+];
+
+function findDiagnol(a: number[][]) {
+    const myArr = [];
+    for (let i = 0; i < a.length; i++) {
+        myArr.push(a[i][i]);
+    }
+
+    console.log(myArr);
+    
+}
+
+findDiagnol(multiDiArray);
+*/
+/*
+function sumArr(a: number[][]) {
+    let myArr = a.flat();
+    let sum = myArr.reduce((a: number, b: number) => a + b);
+    return sum;
+}
+
+let returnValue = sumArr(multiDiArray);
+console.log(returnValue);
+*/
+// 3. Filter and Searching in Arrays of Object
+/*
+interface Book {
+    title: string;
+    author: string;
+    yearPublished: number;
+}
+
+const library: Book[] = [
     { title: 'OOlika', author: 'M.G John', yearPublished: 1990 },
     { title: 'PPlaghs', author: 'K.L Alice', yearPublished: 1991 },
     { title: 'ppomer', author: 'M.I Udda', yearPublished: 1992 },
@@ -19,9 +69,41 @@ const library = [
     { title: 'opjkue', author: 'S Bolla', yearPublished: 2006 },
     { title: 'vbfds', author: 'C Viki', yearPublished: 2007 },
 ];
-function filterArrar(author) {
+
+function filterYear(year: number) {
+    let newLibrary: any;
+    
+    for (let i = 0; i < library.length; i++) {
+        const element: any = library[i];
+        
+        if(element.yearPublished === year) {
+            newLibrary = library.slice(i);
+        }
+    }
+    console.log(newLibrary);
+    
+}
+
+filterYear(2000);
+*/
+/*
+function searchFilterArrar(author: string) {
     return library.filter(book => book.author === author);
 }
-const returnValue = filterArrar('Danny');
+
+const returnValue = searchFilterArrar('Danny');
+*/
+// console.log(returnValue);
+// 4. Using Array Methods
+const myNums = [1, 23, 65, 12, 254, 67, 77, 8, 52, 100, 111, 42, 123, 84, 45];
+function squareArr(arr) {
+    let sqrNums = [];
+    for (let i = 0; i < arr.length; i++) {
+        const element = arr[i] * arr[i];
+        sqrNums.push(element);
+    }
+    return sqrNums;
+}
+let returnValue = squareArr(myNums);
 console.log(returnValue);
 export {};
