@@ -5,13 +5,54 @@ let coffeeOrder: [string, string] = ['Cappuccino', 'Medium'];
 console.log(coffeeOrder);
 */
 // TypeScript Enums
-var CoffeeType;
-(function (CoffeeType) {
-    CoffeeType[CoffeeType["Expresso"] = 0] = "Expresso";
-    CoffeeType[CoffeeType["Latte"] = 1] = "Latte";
-    CoffeeType[CoffeeType["Cappuccino"] = 2] = "Cappuccino";
-    CoffeeType[CoffeeType["Americano"] = 3] = "Americano";
-})(CoffeeType || (CoffeeType = {}));
-let myCoffee = CoffeeType.Latte;
+/*
+enum CoffeeType {
+    Expresso,
+    Latte,
+    Cappuccino,
+    Americano
+}
+
+let myCoffee: CoffeeType = CoffeeType.Latte;
 console.log(myCoffee);
+*/
+// TypeScript While Loop
+/*
+let minutesUntilBusArrives: number = 5;
+
+while (minutesUntilBusArrives > 0) {
+    console.log(`Bus arrives in ${minutesUntilBusArrives} minutes.`);
+    minutesUntilBusArrives--;
+}
+*/
+// TypeScript Do While Loop
+// let minutesUntilBusArrives: number = 5;
+// do {
+//     console.log('Checking for the bus...');
+//     /* Assume checkBusArrival() decreases minutesUntilBusArrives and returns
+//     false when the bus arrives */
+// } while (minutesUntilBusArrives> 0);
+// let minutesUntilBusArrives: number = 5;
+// do {
+//     console.log('Checking for the bus...');
+//     minutesUntilBusArrives--;
+//     /* Assume checkBusArrival() decreases minutesUntilBusArrives and returns
+//     false when the bus arrives */
+// } while (minutesUntilBusArrives> 0);
+let minutesUntilBusArrives = 5;
+function checkBusArrival() {
+    minutesUntilBusArrives--;
+    if (minutesUntilBusArrives != 0) {
+        return 'Checking for the bus...';
+    }
+    else {
+        return false;
+    }
+}
+do {
+    let response = checkBusArrival();
+    console.log(response);
+    /* Assume checkBusArrival() decreases minutesUntilBusArrives and returns
+    false when the bus arrives */
+} while (minutesUntilBusArrives > 0);
 export {};
