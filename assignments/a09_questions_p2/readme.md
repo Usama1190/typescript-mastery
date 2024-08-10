@@ -50,3 +50,13 @@ Create an array of numbers. Using array methods, perform the following tasks
 - Use the reduce method to find the sum of all numbers in the array
 
 Example usage of array methods for manipulation.
+
+
+
+
+
+
+5. Advanced: Working with Nested Arrays and Objects
+Consider an array of objects where each object represents a student. Each student object has a name, id and a array of grades. Write a function that calculates the average grade for each student and adds it as a new property averageGrade to each student object
+
+Define the array of student objects and implements the function
