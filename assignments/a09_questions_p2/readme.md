@@ -24,3 +24,15 @@ Define a 3x3 matrix of numbers as a multidimentional array. Write functions to.
 - Calculate the sum of all elements in the matrix
 
 Define the matrix and implements the functions
+
+
+
+
+
+3. Filter and Searching in Arrays of Object
+Given an array of objects where each object represents a book with properties title, author and yearPublished write function too.
+
+- Filter books published after the year 2000.
+- Search for books by a specific author
+
+Define the array of books object and implement the functions.
