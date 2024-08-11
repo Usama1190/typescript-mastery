@@ -148,7 +148,14 @@ checkWeekDays('Sunday');
 
 
 // 7. Tuples For RGB Colors
+/*
+const myTuple: [string, string, string] = ["Red", "Green", "Blue"];
 
-const tuple: [string, string, string] = ['Red', 'Green', 'Blue'];
+function myFunc(tuple: any): string {
+    return `${tuple[0]}, is a danger, ${tuple[1]}, is a success and ${tuple[2]}, is a primary color.`;
+    
+}
 
-function rgb(x: []) {}
+const returnValue = myFunc(myTuple);
+console.log(returnValue);
+*/

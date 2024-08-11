@@ -31,17 +31,22 @@ function printEachProperty() {
 
 printEachProperty();
 */
+/*
 const car = {
     make: 'Toyota',
     model: 'XC60',
     year: 2000
-};
-function printEachProperty(car) {
-    for (const key in car) {
+}
+
+function printEachProperty(car: { [key: string]: string | number }) {
+    for(const key in car) {
         console.log(`Property: ${key}, and its value: ${car[key]}`);
+        
     }
 }
+
 printEachProperty(car);
+*/
 // 3. Basic For Loop Exercise
 /*
 function myFunc() {
@@ -107,6 +112,10 @@ function checkWeekDays(day: string) {
 checkWeekDays('Sunday');
 */
 // 7. Tuples For RGB Colors
-const tuple = ['Red', 'Green', 'Blue'];
-function rgb(x) { }
+const myTuple = ["Red", "Green", "Blue"];
+function myFunc(tuple) {
+    return `${tuple[0]}, is a danger, ${tuple[1]}, is a success and ${tuple[2]}, is a primary color.`;
+}
+const returnValue = myFunc(myTuple);
+console.log(returnValue);
 export {};

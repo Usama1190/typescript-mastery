@@ -65,9 +65,3 @@ Example enum for days and function.
 Define a tuple type for RGB color values. Write a function that takes an RGB tuple as an argument and returns a string describing the color.
 
 Example RGB tuple and function.
-
-
-
-
-
-8.
