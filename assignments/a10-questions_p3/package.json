@@ -1,0 +1,13 @@
+{
+  "name": "a10-questions_p3",
+  "version": "1.0.0",
+  "description": "Home Work Assignments",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
